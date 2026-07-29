@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://tysiatskii.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tysiatskii.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tysiatskii.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tysiatskii.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tysiatskii.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tysiatskii.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tysiatskii.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tysiatskii.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tysiatskii.com/hypothesis</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tysiatskii.com/hypothesis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tysiatskii.com/en/hypothesis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tysiatskii.com/hypothesis"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tysiatskii.com/en/hypothesis</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tysiatskii.com/hypothesis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tysiatskii.com/en/hypothesis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tysiatskii.com/hypothesis"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tysiatskii.com/data</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tysiatskii.com/data"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tysiatskii.com/en/data"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tysiatskii.com/data"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tysiatskii.com/en/data</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tysiatskii.com/data"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tysiatskii.com/en/data"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tysiatskii.com/data"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tysiatskii.com/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tysiatskii.com/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tysiatskii.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tysiatskii.com/faq"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tysiatskii.com/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tysiatskii.com/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tysiatskii.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tysiatskii.com/faq"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

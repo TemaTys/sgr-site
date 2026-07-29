@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Seleno-Gravitational Rhythm (SGR) | Artem Tysiatskii</title>
+<meta name="description" content="Answers to frequent questions about the SGR project: does it prove the Moon affects behavior, are multiple comparisons controlled, can the analysis be replicated, and who is the author.">
+<link rel="canonical" href="https://tysiatskii.com/faq">
+<link rel="alternate" hreflang="ru" href="https://tysiatskii.com/faq">
+<link rel="alternate" hreflang="en" href="https://tysiatskii.com/en/faq">
+<link rel="alternate" hreflang="x-default" href="https://tysiatskii.com/faq">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FAQ — Seleno-Gravitational Rhythm (SGR) | Artem Tysiatskii">
+<meta property="og:description" content="Answers to frequent questions about the SGR project: does it prove the Moon affects behavior, are multiple comparisons controlled, can the analysis be replicated, and who is the author.">
+<meta property="og:url" content="https://tysiatskii.com/faq">
+<meta property="og:image" content="https://tysiatskii.com/assets/img/og-cover.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FAQ — Seleno-Gravitational Rhythm (SGR) | Artem Tysiatskii">
+<meta name="twitter:description" content="Answers to frequent questions about the SGR project: does it prove the Moon affects behavior, are multiple comparisons controlled, can the analysis be replicated, and who is the author.">
+<meta name="twitter:image" content="https://tysiatskii.com/assets/img/og-cover.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/main.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does SGR prove that the Moon affects human behavior?", "acceptedAnswer": {"@type": "Answer", "text": "SGR documents robust statistical associations — reproduced across five independent city datasets — between astronomical triggers (static phases and impulsive d²F/dt² waves) and population-level crime, EMS, and 911 indicators. That said, the association itself is not proof of direct causation in the strict sense: confirming a causal mechanism requires additional molecular-level verification and prospective protocols with individual monitoring (see §7.7, ‘Limitations of causal interpretation’, in the article)."}}, {"@type": "Question", "name": "Is this just the full-moon effect?", "acceptedAnswer": {"@type": "Answer", "text": "No. Most prior lunar-influence studies compare ‘lunar phase day vs. other days.’ SGR explicitly separates two independent layers: a static phase layer (the traditional four phases, Branch A) and an impulsive wave layer — jumps in the second derivative of the tidal potential d²F/dt², detected by the ddF detector (Branch B, with static phases partialled out). The two layers manifest in different classes of outcomes."}}, {"@type": "Question", "name": "Are seasonality, weekdays, and holidays accounted for?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Before effect estimation, every time series is processed by OLS regression with a degree-4 polynomial trend, an annual Fourier basis (3 harmonics), day-of-week dummies, and U.S. federal holiday dummies with ±1-day lags (§3.3 of the article). Effects are estimated on residuals with the full calendar structure already removed."}}, {"@type": "Question", "name": "Are multiple comparisons controlled for?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, at two levels. Within strata (epoch × trigger family × lag), Benjamini–Hochberg (BH-FDR) correction is applied. Across cities, a two-stage random-effects meta-analysis with HKSJ correction (Hartung–Knapp–Sidik–Jonkman) is used — the conservative standard for a small number of cohorts (k = 5 cities, df = 4), which reduces the risk of anti-conservative underestimation of the standard error (§3.8–§3.9)."}}, {"@type": "Question", "name": "Can the analysis be reproduced independently?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The full source code (base.py, gen.py, correlator.py, verdict.py, single_correlator.py, single_verdict.py), a requirements.txt with pinned library versions, and instructions for downloading the raw city datasets are published on GitHub. An archival snapshot with a DOI is deposited on Zenodo. Code is under the MIT license; processed data and figures under CC-BY 4.0."}}, {"@type": "Question", "name": "Who is the author, and why should the data be trusted?", "acceptedAnswer": {"@type": "Answer", "text": "The author is Artem Tysiatskii, an independent researcher and software developer based in Kaliningrad, Russia (ORCID 0009-0006-1974-7894). All seven source databases are public official open-data portals of U.S. cities (NYC, LA, Chicago, Philadelphia, SF). The author declares no competing interests; the work is self-funded independent research with no external financial support (§9.0 of the article)."}}, {"@type": "Question", "name": "What are the main limitations of the study?", "acceptedAnswer": {"@type": "Answer", "text": "Among others: (1) data are aggregated at the calendar-day level, precluding evaluation of intra-day shifts; (2) geomagnetic background (K-index) is not included as a covariate; (3) the observed effects are population-level statistics (~3–6% for property crimes, ~10–20% for individual medical indicators), not individual probabilities. The full list of 7 limitations is given in §7 of the article."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-site-header>
+  <div class="wrap site-header__inner">
+    <a class="brand" href="../../en/index.html">
+      <svg class="brand__mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <circle cx="20" cy="20" r="17.5" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+  <path d="M20 3.5C13 8 13 32 20 36.5" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+  <path d="M4 22c3-6 6-9 9-9s5 7 8 7 5-11 9-11 6 5 6 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="30" cy="10" r="2" fill="currentColor"/>
+</svg>
+      <span class="brand__text">
+        <span class="brand__name">Artem Tysiatskii</span>
+        <span class="brand__tag">SGR &middot; Independent researcher</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="main-nav__list">
+          <li><a href="../../en/index.html">Home</a></li>
+          <li><a href="../../en/hypothesis/index.html">Hypothesis & paper</a></li>
+          <li><a href="../../en/data/index.html">Data</a></li>
+          <li><a href="../../en/faq/index.html" aria-current="page">FAQ</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Language">
+          <a href="../../faq/index.html" aria-current="false">RU</a>
+          <a href="../../en/faq/index.html" aria-current="true">EN</a>
+        </div>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme" type="button"></button>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="section section--tight">
+  <div class="wrap wrap--prose">
+    <span class="eyebrow">FAQ</span>
+    <h1>Frequently asked questions about SGR</h1>
+    <p class="hero__lede" style="margin-top:var(--space-4)">Real skeptical objections and questions about the author, answered self-sufficiently based on the article text.</p>
+  </div>
+</section>
+<section class="section section--tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Does SGR prove that the Moon affects human behavior?</h3>
+        <p>SGR documents robust statistical associations — reproduced across five independent city datasets — between astronomical triggers (static phases and impulsive d²F/dt² waves) and population-level crime, EMS, and 911 indicators. That said, the association itself is not proof of direct causation in the strict sense: confirming a causal mechanism requires additional molecular-level verification and prospective protocols with individual monitoring (see §7.7, ‘Limitations of causal interpretation’, in the article).</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is this just the full-moon effect?</h3>
+        <p>No. Most prior lunar-influence studies compare ‘lunar phase day vs. other days.’ SGR explicitly separates two independent layers: a static phase layer (the traditional four phases, Branch A) and an impulsive wave layer — jumps in the second derivative of the tidal potential d²F/dt², detected by the ddF detector (Branch B, with static phases partialled out). The two layers manifest in different classes of outcomes.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are seasonality, weekdays, and holidays accounted for?</h3>
+        <p>Yes. Before effect estimation, every time series is processed by OLS regression with a degree-4 polynomial trend, an annual Fourier basis (3 harmonics), day-of-week dummies, and U.S. federal holiday dummies with ±1-day lags (§3.3 of the article). Effects are estimated on residuals with the full calendar structure already removed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are multiple comparisons controlled for?</h3>
+        <p>Yes, at two levels. Within strata (epoch × trigger family × lag), Benjamini–Hochberg (BH-FDR) correction is applied. Across cities, a two-stage random-effects meta-analysis with HKSJ correction (Hartung–Knapp–Sidik–Jonkman) is used — the conservative standard for a small number of cohorts (k = 5 cities, df = 4), which reduces the risk of anti-conservative underestimation of the standard error (§3.8–§3.9).</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can the analysis be reproduced independently?</h3>
+        <p>Yes. The full source code (base.py, gen.py, correlator.py, verdict.py, single_correlator.py, single_verdict.py), a requirements.txt with pinned library versions, and instructions for downloading the raw city datasets are published on GitHub. An archival snapshot with a DOI is deposited on Zenodo. Code is under the MIT license; processed data and figures under CC-BY 4.0.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Who is the author, and why should the data be trusted?</h3>
+        <p>The author is Artem Tysiatskii, an independent researcher and software developer based in Kaliningrad, Russia (ORCID 0009-0006-1974-7894). All seven source databases are public official open-data portals of U.S. cities (NYC, LA, Chicago, Philadelphia, SF). The author declares no competing interests; the work is self-funded independent research with no external financial support (§9.0 of the article).</p>
+      </div>
+      <div class="faq-item">
+        <h3>What are the main limitations of the study?</h3>
+        <p>Among others: (1) data are aggregated at the calendar-day level, precluding evaluation of intra-day shifts; (2) geomagnetic background (K-index) is not included as a covariate; (3) the observed effects are population-level statistics (~3–6% for property crimes, ~10–20% for individual medical indicators), not individual probabilities. The full list of 7 limitations is given in §7 of the article.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p style="max-width:46ch">Personal research site of Artem Tysiatskii (TemaTys), dedicated to the Seleno-Gravitational Rhythm (SGR) project.</p>
+    <div class="footer-links">
+        <a href="https://github.com/TemaTys/seleno-gravitational-rhythm" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://doi.org/10.5281/zenodo.20518660" target="_blank" rel="noopener noreferrer">Zenodo DOI</a>
+        <a href="https://orcid.org/0009-0006-1974-7894" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://t.me/TemaTys" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="mailto:artem.tysiatskii@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+    </div>
+  </div>
+  <div class="wrap"><p class="note" style="margin-top:var(--space-6)">© <span data-year>2026</span> Artem Tysiatskii. Code released under the MIT License; data and figures under CC-BY 4.0.</p></div>
+</footer>
+<script src="../../assets/js/main.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://perplexity.localhost","http://localhost:1420","http://127.0.0.1:1420","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>

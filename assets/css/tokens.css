@@ -1,0 +1,171 @@
+/* ==========================================================================
+   SGR / Artem Tysiatskii — Design Tokens
+   Theme: astronomical observatory — deep graphite/night-sky, cold silver accent.
+   Serif display (scientific authority) + precise grotesk body.
+   ========================================================================== */
+
+:root {
+  /* ---- Type scale (fluid clamp) ---- */
+  --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.83rem + 0.2vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
+  --text-xl: clamp(1.4rem, 1.2rem + 1vw, 1.9rem);
+  --text-2xl: clamp(1.9rem, 1.4rem + 2vw, 2.9rem);
+  --text-3xl: clamp(2.4rem, 1.5rem + 3.2vw, 4rem);
+  --text-hero: clamp(2.6rem, 1.2rem + 5vw, 5.2rem);
+
+  /* ---- Spacing (4px base) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ---- Fonts ---- */
+  --font-display: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* ---- Radius ---- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.875rem;
+  --radius-full: 9999px;
+
+  /* ---- Transitions ---- */
+  --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---- Content widths ---- */
+  --content-narrow: 640px;
+  --content-default: 960px;
+  --content-wide: 1180px;
+  --content-prose: 700px;
+}
+
+/* ---- Color: Observatory theme ---- */
+:root,
+[data-theme='dark'] {
+  /* Surfaces — deep graphite / night-sky blue */
+  --color-bg: #0a0e17;
+  --color-surface: #10151f;
+  --color-surface-2: #141b28;
+  --color-surface-offset: #182030;
+  --color-surface-offset-2: #1c2536;
+  --color-surface-dynamic: #212c40;
+  --color-divider: #263049;
+  --color-border: #2c3752;
+
+  /* Text — starlight scale */
+  --color-text: #e7ecf5;
+  --color-text-muted: #9aa7c2;
+  --color-text-faint: #5e6b87;
+  --color-text-inverse: #0a0e17;
+
+  /* Primary accent — lunar silver / ice blue */
+  --color-primary: #8fd4e8;
+  --color-primary-hover: #b4e3f1;
+  --color-primary-active: #d8f0f8;
+  --color-primary-highlight: #1c3542;
+
+  /* Secondary accent — moon silver (neutral) */
+  --color-silver: #c7cede;
+  --color-silver-highlight: #232a3d;
+
+  /* Semantic: warning / error / success — muted, scientific, not decorative */
+  --color-warning: #d9a15b;
+  --color-warning-highlight: #332a1c;
+  --color-error: #d9748a;
+  --color-error-highlight: #33202a;
+  --color-success: #7cbf9e;
+  --color-success-highlight: #1c332a;
+
+  /* Data-viz secondary hues (charts/tables only) */
+  --color-blue: #6f9fd8;
+  --color-gold: #cfae6a;
+
+  --shadow-sm: 0 1px 3px oklch(0 0 0 / 0.35);
+  --shadow-md: 0 6px 20px oklch(0 0 0 / 0.4);
+  --shadow-lg: 0 20px 48px oklch(0 0 0 / 0.5);
+}
+
+/* Light mode — dawn-over-observatory: cool pale surfaces, same navy text logic inverted */
+[data-theme='light'] {
+  --color-bg: #f4f6fb;
+  --color-surface: #ffffff;
+  --color-surface-2: #eef1f8;
+  --color-surface-offset: #e6eaf3;
+  --color-surface-offset-2: #dde3ef;
+  --color-surface-dynamic: #d3dae9;
+  --color-divider: #d7dde9;
+  --color-border: #c3cbdc;
+
+  --color-text: #101728;
+  --color-text-muted: #4a5573;
+  --color-text-faint: #8390ab;
+  --color-text-inverse: #f4f6fb;
+
+  --color-primary: #0e6f8c;
+  --color-primary-hover: #0a5670;
+  --color-primary-active: #07404f;
+  --color-primary-highlight: #dcedf2;
+
+  --color-silver: #4a5573;
+  --color-silver-highlight: #e6eaf3;
+
+  --color-warning: #9a6423;
+  --color-warning-highlight: #f3e6d1;
+  --color-error: #a63c53;
+  --color-error-highlight: #f5dde2;
+  --color-success: #2f7256;
+  --color-success-highlight: #dcefe4;
+
+  --color-blue: #2f6fa8;
+  --color-gold: #96772c;
+
+  --shadow-sm: 0 1px 2px oklch(0.2 0.02 250 / 0.08);
+  --shadow-md: 0 4px 14px oklch(0.2 0.02 250 / 0.1);
+  --shadow-lg: 0 16px 40px oklch(0.2 0.02 250 / 0.14);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --color-bg: #f4f6fb;
+    --color-surface: #ffffff;
+    --color-surface-2: #eef1f8;
+    --color-surface-offset: #e6eaf3;
+    --color-surface-offset-2: #dde3ef;
+    --color-surface-dynamic: #d3dae9;
+    --color-divider: #d7dde9;
+    --color-border: #c3cbdc;
+    --color-text: #101728;
+    --color-text-muted: #4a5573;
+    --color-text-faint: #8390ab;
+    --color-text-inverse: #f4f6fb;
+    --color-primary: #0e6f8c;
+    --color-primary-hover: #0a5670;
+    --color-primary-active: #07404f;
+    --color-primary-highlight: #dcedf2;
+    --color-silver: #4a5573;
+    --color-silver-highlight: #e6eaf3;
+    --color-warning: #9a6423;
+    --color-warning-highlight: #f3e6d1;
+    --color-error: #a63c53;
+    --color-error-highlight: #f5dde2;
+    --color-success: #2f7256;
+    --color-success-highlight: #dcefe4;
+    --color-blue: #2f6fa8;
+    --color-gold: #96772c;
+    --shadow-sm: 0 1px 2px oklch(0.2 0.02 250 / 0.08);
+    --shadow-md: 0 4px 14px oklch(0.2 0.02 250 / 0.1);
+    --shadow-lg: 0 16px 40px oklch(0.2 0.02 250 / 0.14);
+  }
+}
