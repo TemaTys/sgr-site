@@ -30,7 +30,7 @@ To add a row: append an object to the `rows` array in `assets/data/table.json` f
 
 ## Source of truth
 
-All facts, figures, and numbers come verbatim from the seleno-gravitational-rhythm[9] repository (article PDFs, README, CITATION.cff, semantic maps, and official figures). Nothing here is invented or rounded.
+All facts, figures, and numbers come verbatim from the seleno-gravitational-rhythm repository (article PDFs, README, CITATION.cff, semantic maps, and official figures). Nothing here is invented or rounded.
 
 ## Design
 
@@ -38,4 +38,4 @@ Astronomical-observatory theme: deep navy/graphite background, starfield + d²F/
 
 ## Author
 
-**Artem Tysiatskii** (TemaTys) — independent researcher and software developer, Kaliningrad, Russia. [ORCID](https://orcid.org/0009-0006-1974-7894) · [Zenodo](https://doi.org/10.5281/zenodo.20518660) · SGR repository[9]
+**Artem Tysiatskii** (TemaTys) — independent researcher and software developer, Kaliningrad, Russia. [ORCID](https://orcid.org/0009-0006-1974-7894) · [Zenodo](https://doi.org/10.5281/zenodo.20518660) · SGR repository
