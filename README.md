@@ -38,4 +38,4 @@ Astronomical-observatory theme: deep navy/graphite background, starfield + d²F/
 
 ## Author
 
-**Artem Tysiatskii** (TemaTys) — independent researcher and software developer, Kaliningrad, Russia. [ORCID](https://orcid.org/0009-0006-1974-7894) · [Zenodo](https://doi.org/10.5281/zenodo.20518660) · SGR repository
+**Artem Tysiatskii** (TemaTys) — independent researcher and software developer, Kaliningrad, Russia. [ORCID](https://orcid.org/0009-0006-1974-7894) · [Zenodo](https://doi.org/10.5281/zenodo.20518660) · [SGR repository](https://github.com/TemaTys/seleno-gravitational-rhythm)
