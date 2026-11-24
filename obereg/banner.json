@@ -14,8 +14,8 @@
       "to": "2027-01-10",
       "frequency": "once",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_year2027_ru.webp",
-      "link": "https://obereg.app/?src=app&b=pop_year2027&lang=ru"
+      "image": "https://tysiatskii.com/obereg/img/pop_year2027_ru.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_year2027&lang=ru"
     },
     {
       "id": "pop_attract_ru",
@@ -33,8 +33,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_attract_ru.webp",
-      "link": "https://obereg.app/?src=app&b=pop_attract&lang=ru"
+      "image": "https://tysiatskii.com/obereg/img/pop_attract_ru.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_attract&lang=ru"
     },
     {
       "id": "pop_depth_ru",
@@ -52,8 +52,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_depth_ru.webp",
-      "link": "https://obereg.app/?src=app&b=pop_depth&lang=ru"
+      "image": "https://tysiatskii.com/obereg/img/pop_depth_ru.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_depth&lang=ru"
     },
     {
       "id": "inl_door_ru",
@@ -65,8 +65,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_door_ru.webp",
-      "link": "https://obereg.app/?src=app&b=inl_door&lang=ru"
+      "image": "https://tysiatskii.com/obereg/img/inl_door_ru.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_door&lang=ru"
     },
     {
       "id": "inl_moment_ru",
@@ -78,8 +78,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_moment_ru.webp",
-      "link": "https://obereg.app/?src=app&b=inl_moment&lang=ru"
+      "image": "https://tysiatskii.com/obereg/img/inl_moment_ru.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_moment&lang=ru"
     },
     {
       "id": "inl_gift_ru",
@@ -91,8 +91,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_gift_ru.webp",
-      "link": "https://obereg.app/?src=app&b=inl_gift&lang=ru"
+      "image": "https://tysiatskii.com/obereg/img/inl_gift_ru.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_gift&lang=ru"
     },
     {
       "id": "pop_year2027_en",
@@ -107,8 +107,8 @@
       "to": "2027-01-10",
       "frequency": "once",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_year2027_en.webp",
-      "link": "https://obereg.app/?src=app&b=pop_year2027&lang=en"
+      "image": "https://tysiatskii.com/obereg/img/pop_year2027_en.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_year2027&lang=en"
     },
     {
       "id": "pop_attract_en",
@@ -126,8 +126,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_attract_en.webp",
-      "link": "https://obereg.app/?src=app&b=pop_attract&lang=en"
+      "image": "https://tysiatskii.com/obereg/img/pop_attract_en.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_attract&lang=en"
     },
     {
       "id": "pop_depth_en",
@@ -145,8 +145,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_depth_en.webp",
-      "link": "https://obereg.app/?src=app&b=pop_depth&lang=en"
+      "image": "https://tysiatskii.com/obereg/img/pop_depth_en.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_depth&lang=en"
     },
     {
       "id": "inl_door_en",
@@ -158,8 +158,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_door_en.webp",
-      "link": "https://obereg.app/?src=app&b=inl_door&lang=en"
+      "image": "https://tysiatskii.com/obereg/img/inl_door_en.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_door&lang=en"
     },
     {
       "id": "inl_moment_en",
@@ -171,8 +171,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_moment_en.webp",
-      "link": "https://obereg.app/?src=app&b=inl_moment&lang=en"
+      "image": "https://tysiatskii.com/obereg/img/inl_moment_en.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_moment&lang=en"
     },
     {
       "id": "inl_gift_en",
@@ -184,8 +184,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_gift_en.webp",
-      "link": "https://obereg.app/?src=app&b=inl_gift&lang=en"
+      "image": "https://tysiatskii.com/obereg/img/inl_gift_en.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_gift&lang=en"
     },
     {
       "id": "pop_year2027_es",
@@ -200,8 +200,8 @@
       "to": "2027-01-10",
       "frequency": "once",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_year2027_es.webp",
-      "link": "https://obereg.app/?src=app&b=pop_year2027&lang=es"
+      "image": "https://tysiatskii.com/obereg/img/pop_year2027_es.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_year2027&lang=es"
     },
     {
       "id": "pop_attract_es",
@@ -219,8 +219,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_attract_es.webp",
-      "link": "https://obereg.app/?src=app&b=pop_attract&lang=es"
+      "image": "https://tysiatskii.com/obereg/img/pop_attract_es.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_attract&lang=es"
     },
     {
       "id": "pop_depth_es",
@@ -238,8 +238,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_depth_es.webp",
-      "link": "https://obereg.app/?src=app&b=pop_depth&lang=es"
+      "image": "https://tysiatskii.com/obereg/img/pop_depth_es.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_depth&lang=es"
     },
     {
       "id": "inl_door_es",
@@ -251,8 +251,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_door_es.webp",
-      "link": "https://obereg.app/?src=app&b=inl_door&lang=es"
+      "image": "https://tysiatskii.com/obereg/img/inl_door_es.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_door&lang=es"
     },
     {
       "id": "inl_moment_es",
@@ -264,8 +264,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_moment_es.webp",
-      "link": "https://obereg.app/?src=app&b=inl_moment&lang=es"
+      "image": "https://tysiatskii.com/obereg/img/inl_moment_es.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_moment&lang=es"
     },
     {
       "id": "inl_gift_es",
@@ -277,8 +277,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_gift_es.webp",
-      "link": "https://obereg.app/?src=app&b=inl_gift&lang=es"
+      "image": "https://tysiatskii.com/obereg/img/inl_gift_es.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_gift&lang=es"
     },
     {
       "id": "pop_year2027_pt-br",
@@ -293,8 +293,8 @@
       "to": "2027-01-10",
       "frequency": "once",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_year2027_pt-BR.webp",
-      "link": "https://obereg.app/?src=app&b=pop_year2027&lang=pt-BR"
+      "image": "https://tysiatskii.com/obereg/img/pop_year2027_pt-BR.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_year2027&lang=pt-BR"
     },
     {
       "id": "pop_attract_pt-br",
@@ -312,8 +312,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_attract_pt-BR.webp",
-      "link": "https://obereg.app/?src=app&b=pop_attract&lang=pt-BR"
+      "image": "https://tysiatskii.com/obereg/img/pop_attract_pt-BR.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_attract&lang=pt-BR"
     },
     {
       "id": "pop_depth_pt-br",
@@ -331,8 +331,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_depth_pt-BR.webp",
-      "link": "https://obereg.app/?src=app&b=pop_depth&lang=pt-BR"
+      "image": "https://tysiatskii.com/obereg/img/pop_depth_pt-BR.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_depth&lang=pt-BR"
     },
     {
       "id": "inl_door_pt-br",
@@ -344,8 +344,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_door_pt-BR.webp",
-      "link": "https://obereg.app/?src=app&b=inl_door&lang=pt-BR"
+      "image": "https://tysiatskii.com/obereg/img/inl_door_pt-BR.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_door&lang=pt-BR"
     },
     {
       "id": "inl_moment_pt-br",
@@ -357,8 +357,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_moment_pt-BR.webp",
-      "link": "https://obereg.app/?src=app&b=inl_moment&lang=pt-BR"
+      "image": "https://tysiatskii.com/obereg/img/inl_moment_pt-BR.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_moment&lang=pt-BR"
     },
     {
       "id": "inl_gift_pt-br",
@@ -370,8 +370,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_gift_pt-BR.webp",
-      "link": "https://obereg.app/?src=app&b=inl_gift&lang=pt-BR"
+      "image": "https://tysiatskii.com/obereg/img/inl_gift_pt-BR.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_gift&lang=pt-BR"
     },
     {
       "id": "pop_year2027_hi",
@@ -386,8 +386,8 @@
       "to": "2027-01-10",
       "frequency": "once",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_year2027_hi.webp",
-      "link": "https://obereg.app/?src=app&b=pop_year2027&lang=hi"
+      "image": "https://tysiatskii.com/obereg/img/pop_year2027_hi.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_year2027&lang=hi"
     },
     {
       "id": "pop_attract_hi",
@@ -405,8 +405,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_attract_hi.webp",
-      "link": "https://obereg.app/?src=app&b=pop_attract&lang=hi"
+      "image": "https://tysiatskii.com/obereg/img/pop_attract_hi.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_attract&lang=hi"
     },
     {
       "id": "pop_depth_hi",
@@ -424,8 +424,8 @@
       ],
       "frequency": "daily",
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/pop_depth_hi.webp",
-      "link": "https://obereg.app/?src=app&b=pop_depth&lang=hi"
+      "image": "https://tysiatskii.com/obereg/img/pop_depth_hi.webp",
+      "link": "https://tysiatskii.com/?src=app&b=pop_depth&lang=hi"
     },
     {
       "id": "inl_door_hi",
@@ -437,8 +437,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_door_hi.webp",
-      "link": "https://obereg.app/?src=app&b=inl_door&lang=hi"
+      "image": "https://tysiatskii.com/obereg/img/inl_door_hi.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_door&lang=hi"
     },
     {
       "id": "inl_moment_hi",
@@ -450,8 +450,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_moment_hi.webp",
-      "link": "https://obereg.app/?src=app&b=inl_moment&lang=hi"
+      "image": "https://tysiatskii.com/obereg/img/inl_moment_hi.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_moment&lang=hi"
     },
     {
       "id": "inl_gift_hi",
@@ -463,8 +463,8 @@
         "*"
       ],
       "minVersion": 200,
-      "image": "https://obereg.app/obereg/img/inl_gift_hi.webp",
-      "link": "https://obereg.app/?src=app&b=inl_gift&lang=hi"
+      "image": "https://tysiatskii.com/obereg/img/inl_gift_hi.webp",
+      "link": "https://tysiatskii.com/?src=app&b=inl_gift&lang=hi"
     }
   ]
 }
